@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <title>SuperHeroe</title>
+</head>
+<body class="justify-content-center py-5">
+
+  <!-- Barra de navegacion -->
+  <nav class="navbar navbar-custom fixed-top navbar-expand-lg bg-warning navbar-light">
+    <div class="container-fluid mx-4">
+      <img src="assets/img/favicon.ico" alt="">
+      <a class="navbar-brand marca mx-2" href="#">
+        <span class="super">Super</span><span class="hero">Heroe</span>
+      </a>
+
+      <button class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+
+      <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link mx-1 menu-item active" aria-current="page" href="#">Encuentra</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="imagen-cabecera text-center mt-3">
+    <img class="img-fluid" src="assets/img/sh3.png" alt="superheroes">
+  </section>
+
+  <section id="encuentra" class="encuentra text-center">
+    <div class="row mx-auto">
+      <div class="col-md-3"></div>
+      <div class="col-md-6">
+        <div class="formulario rounded p-3">
+          <div class="titular">
+            <h2>Encuentra tu <span class="super">Super</span><span class="hero">Hero</span></h2>
+          </div>
+          <form id="formBuscar">
+            <div class="mb-3">
+              <label for="inputBuscar" class="form-label">Ingresa el numero del <span class="super">Super</span><span class="hero">Hero</span> a buscar</label>
+              <input type="text" class="form-control" id="inputBuscar" aria-describedby="textHelp">
+            </div>
+            <p class="errorNro"></p>
+            <button id="buscar" type="submit" class="btn btn-warning">Buscar</button>
+          </form>
+        </div>
+      </div>
+      <div class="col-md-3"></div>
+    </div>
+  </section>
+
+  <section id="superhero" class="superhero justify-content-center text-center row mx-auto py-3">
+    <div class="heroe-detail col-md-6 text-center">
+      <div class="alert alert-success" role="alert">
+        Superheroe encontrado!
+      </div>
+      <div class="card">
+        <div class="card-horizontal">
+            <div class="img-square-wrapper">
+                <img class="photo img-fluid" alt="SuperHero">
+            </div>
+            <div class="card-body">
+              <div class="card-text details">
+                <p class="name"></p>
+                <p class="conex"></p>
+                <p class="published"></p>
+                <p class="occupy"></p>
+                <p class="appear"></p>
+                <p class="height"></p>
+                <p class="weight"></p>
+                <p class="ally"></p>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="chart col-md-6">
+      <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+    </div>
+    <button class="another btn btn-warning mt-2">Buscar otro heroe</button>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="assets/js/jquery.canvasjs.min.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

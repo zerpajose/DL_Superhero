@@ -1,0 +1,64 @@
+body {
+  background-image: url("../img/bg-sh1.png");
+}
+
+.marca {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+}
+
+.navbar-custom {
+  background: gray;
+  border: none;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+  color: red;
+}
+
+.nav-link {
+  color: red;
+}
+
+.nav-link:hover {
+  color: #29A8DF;
+}
+
+.super{
+  text-shadow: 0 0 3px red, 0 0 5px red;
+}
+
+.hero {
+  text-shadow: 0 0 3px #29A8DF, 0 0 5px #29A8DF;
+}
+
+.formulario {
+  background-color: rgba(0, 0, 0, 0.05);
+  text-shadow: 0 0 3px gray, 0 0 5px gray;
+}
+
+.errorNro {
+  color: red;
+}
+
+.superhero {
+  background-color: rgba(255, 255, 255, 0.85);
+  text-shadow: 0 0 3px gray, 0 0 5px gray;
+}
+
+.photo {
+  width: 100%;
+}
+
+.details {
+  font-size: smaller;
+  text-align: left;
+}
+
+.another {
+  width: auto;
+}
+
+.card-horizontal {
+  display: flex;
+  flex: 1 1 auto;
+}
